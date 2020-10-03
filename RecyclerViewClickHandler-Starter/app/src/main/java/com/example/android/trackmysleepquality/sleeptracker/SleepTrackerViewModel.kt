@@ -17,11 +17,7 @@
 package com.example.android.trackmysleepquality.sleeptracker
 
 import android.app.Application
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import com.example.android.trackmysleepquality.database.SleepDatabaseDao
 import com.example.android.trackmysleepquality.database.SleepNight
 import com.example.android.trackmysleepquality.formatNights
@@ -33,6 +29,18 @@ import kotlinx.coroutines.launch
 class SleepTrackerViewModel(
         dataSource: SleepDatabaseDao,
         application: Application) : ViewModel() {
+
+//    private val _navigateToSleepDetail = MutableLiveData<Long>()
+//    val navigateToSleepDetail: LiveData<Long>
+//        get() = _navigateToSleepDetail
+//
+//    fun onSleepNightClicked(id: Long) {
+//        _navigateToSleepDetail.value = id
+//    }
+//
+//    fun onSleepDetailNavigated() {
+//        _navigateToSleepDetail.value = null
+//    }
 
     /**
      * Hold a reference to SleepDatabase via SleepDatabaseDao.

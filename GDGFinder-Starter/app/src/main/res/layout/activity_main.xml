@@ -26,10 +26,13 @@
                 android:orientation="vertical">
 
             <androidx.appcompat.widget.Toolbar
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
                     android:id="@+id/toolbar"
+                android:background="?attr/colorPrimaryDark"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize">
                 <ImageView
+                        android:tint="?attr/colorOnPrimary"
                         android:id="@+id/hero_image"
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
